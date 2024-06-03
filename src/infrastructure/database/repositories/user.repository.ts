@@ -1,10 +1,10 @@
 import { InjectRepository } from '@nestjs/typeorm';
-import { IUserRepository } from '../../../domain/interfaces/user-repository.interface';
-import { User } from '../../../domain/entities/user';
+import { IUserRepository } from '@/domain/interfaces/user-repository.interface';
+import { User } from '@/domain/entities/user';
 import { Repository } from 'typeorm';
 import { Injectable } from '@nestjs/common';
 import { UserEntity } from '../entities/user.entity';
-import { CreateUserDto } from '../../../presentation/dtos/create-user.dto';
+import { CreateUserDto } from '@/presentation/dtos/create-user.dto';
 
 export const USER_REPOSITORY = 'USER_REPOSITORY';
 
